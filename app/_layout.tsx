@@ -1,5 +1,6 @@
-import { store } from '@/store';
-import { setAuth } from "@/store/authSlice";
+// import { store } from '@/store';
+import { store } from '../store';
+// import { setAuth } from "@/store/authSlice";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
@@ -7,6 +8,8 @@ import * as SplashScreen from "expo-splash-screen";
 import React, { useEffect, useState } from "react";
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Provider } from 'react-redux';
+import { setAuth } from "../store/authSlice";
+// import { fontsToLoad } from "../assets/theme/fonts";
 import { fontsToLoad } from "../assets/theme/fonts";
 import "../global.css";
 

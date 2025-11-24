@@ -99,7 +99,7 @@ function CardsComponent({
   const handleCardPress = useCallback((item: CardItem) => {
     
       router.push({
-        pathname: '/components/MovieDetail',
+        pathname: '/components/_MovieDetail',
         params: {
           movie: JSON.stringify(item)
         }
