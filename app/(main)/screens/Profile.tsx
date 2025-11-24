@@ -1,11 +1,12 @@
 
-import Colors from '@/constants/Colors'
+// import Colors from '@/constants/Colors'
 import { Ionicons } from '@expo/vector-icons'
 import { LinearGradient } from 'expo-linear-gradient'
 import { useFocusEffect } from 'expo-router'
 import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Animated, Dimensions, ScrollView, Text, TouchableOpacity, View } from 'react-native'
 import Svg, { Defs, G, Rect, Stop, LinearGradient as SvgLinearGradient, Text as SvgText } from 'react-native-svg'
+import Colors from '../../../constants/Colors'
 
 const GENRE_MAP = {
   28: 'Action',

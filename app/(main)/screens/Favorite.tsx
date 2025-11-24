@@ -1,8 +1,9 @@
-import Colors from "@/constants/Colors";
-import apiStrConstants from "@/constants/apiConstants/apiStrConstants";
-import { strings } from "@/constants/strings";
-import { AppDispatch, RootState } from "@/store";
-import { loadFavorites, toggleFavoriteWithStorage } from "@/store/favoriteSlice";
+// import Colors from "@/constants/Colors";
+// import apiStrConstants from "@/constants/apiConstants/apiStrConstants";
+// import { strings } from "@/constants/strings";
+import { strings } from "../../../constants/strings";
+// import { AppDispatch, RootState } from "@/store";
+// import { loadFavorites, toggleFavoriteWithStorage } from "@/store/favoriteSlice";
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import LottieView from "lottie-react-native";
@@ -21,6 +22,10 @@ import {
 } from "react-native";
 import { Swipeable } from "react-native-gesture-handler";
 import { useDispatch, useSelector } from "react-redux";
+import apiStrConstants from "../../../constants/apiConstants/apiStrConstants";
+import Colors from "../../../constants/Colors";
+import { AppDispatch, RootState } from "../../../store";
+import { loadFavorites, toggleFavoriteWithStorage } from "../../../store/favoriteSlice";
 
 const { width } = Dimensions.get("window");
 

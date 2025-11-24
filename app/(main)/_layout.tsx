@@ -44,11 +44,12 @@
 //   );
 // }
 
-import { setAuth } from '@/store/authSlice';
+// import { setAuth } from '@/store/authSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Stack, useRouter } from 'expo-router';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { setAuth } from '../../store/authSlice';
 
 const USERINFO_KEY = "userinfo";
 
@@ -72,11 +73,11 @@ export default function MainLayout() {
           createdAt: userData.createdAt,
         }));
       } else {
-        router.replace('../(auth)/sign-in');
+        router.replace('/(auth)/sign-in');
       }
     } catch (error) {
       console.error('Auth check error:', error);
-      router.replace('../(auth)/sign-in');
+      router.replace('/(auth)/sign-in');
     }
   };
 

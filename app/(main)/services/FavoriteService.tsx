@@ -1,9 +1,10 @@
-import { RootState } from '@/store';
+// import { RootState } from '@/store';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
 import { StyleSheet } from 'react-native';
 import { useSelector } from 'react-redux';
+import { RootState } from '../../../store';
 import Favorite from '../screens/Favorite';
 
 const STORAGE_KEY = "favoriteMovies";

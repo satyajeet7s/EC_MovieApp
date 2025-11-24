@@ -83,7 +83,7 @@ const SignUpScreen = () => {
 
   const goToLogin = () => {
     try {
-      router.replace("../sign-in");
+      router.replace("/sign-in");
     } catch (err) {
       console.error("Navigation error:", err);
     }

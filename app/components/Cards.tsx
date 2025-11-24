@@ -1,7 +1,9 @@
-import apiStrConstants from "@/constants/apiConstants/apiStrConstants";
-import Colors from "@/constants/Colors";
-import { AppDispatch, RootState } from "@/store";
-import { loadFavorites, toggleFavoriteWithStorage } from "@/store/favoriteSlice";
+// import apiStrConstants from "@/constants/apiConstants/apiStrConstants";
+// import Colors from "@/constants/Colors";
+import Colors from "../../constants/Colors";
+// import { AppDispatch, RootState } from "@/store";
+import { AppDispatch, RootState } from "../../store";
+// import { loadFavorites, toggleFavoriteWithStorage } from "@/store/favoriteSlice";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import React, { useCallback, useEffect, useMemo, useRef } from "react";
@@ -16,6 +18,8 @@ import {
 import { Layout } from "react-native-reanimated";
 import { SharedElement } from 'react-native-shared-element';
 import { useDispatch, useSelector } from "react-redux";
+import apiStrConstants from "../../constants/apiConstants/apiStrConstants";
+import { loadFavorites, toggleFavoriteWithStorage } from "../../store/favoriteSlice";
 
 const { width } = Dimensions.get("window");
 

@@ -1,7 +1,8 @@
 
-import Colors from "@/constants/Colors";
+// import Colors from "@/constants/Colors";
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
+import Colors from "../../../constants/Colors";
 import "../../../global.css";
 
 export default function ServiceLayout() {

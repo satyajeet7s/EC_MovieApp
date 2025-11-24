@@ -1,4 +1,4 @@
-import { clearAllFavorites } from '@/store/favoriteSlice';
+// import { clearAllFavorites } from '@/store/favoriteSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect, useRouter } from 'expo-router';
 import React, { useEffect, useState } from 'react';
@@ -6,6 +6,7 @@ import { Alert } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import type { RootState } from '../../../store';
 import { clearAuth } from '../../../store/authSlice';
+import { clearAllFavorites } from '../../../store/favoriteSlice';
 import Profile from '../screens/Profile';
 
 

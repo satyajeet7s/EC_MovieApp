@@ -1,9 +1,11 @@
-import { fetchAllMovies } from '@/app/api/MovieApi';
-import { Movie, staticMovies } from '@/app/data/staticMovies';
+// import { fetchAllMovies } from '@/app/api/MovieApi';
+// import { Movie, staticMovies } from '@/app/data/staticMovies';
 import { RootState } from '@/store';
 import React, { useEffect, useState } from 'react';
 import { StyleSheet } from 'react-native';
 import { useSelector } from 'react-redux';
+import { fetchAllMovies } from '../../api/MovieApi';
+import { Movie, staticMovies } from '../../data/staticMovies';
 import Home from '../screens/Home';
 
 export default function HomeService() {

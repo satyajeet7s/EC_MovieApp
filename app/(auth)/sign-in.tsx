@@ -67,7 +67,7 @@ export default function SignInScreen() {
   const goToHomeService = () => {
     try {
       console.log("navigate -> homeService");
-      router.replace("../(main)/services/HomeService");
+      router.replace("/(main)/services/HomeService");
     } catch (err) {
       console.error("Navigation error:", err);
     }

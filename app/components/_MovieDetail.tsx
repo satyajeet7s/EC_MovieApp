@@ -1,6 +1,7 @@
-import apiStrConstants from '@/constants/apiConstants/apiStrConstants';
-import { AppDispatch, RootState } from '@/store';
-import { toggleFavoriteWithStorage } from '@/store/favoriteSlice';
+// import apiStrConstants from '@/constants/apiConstants/apiStrConstants';
+import apiStrConstants from '../../constants/apiConstants/apiStrConstants';
+// import { AppDispatch, RootState } from '@/store';
+// import { toggleFavoriteWithStorage } from '@/store/favoriteSlice';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useLocalSearchParams, useRouter } from 'expo-router';
@@ -28,6 +29,8 @@ import Animated, {
 } from 'react-native-reanimated';
 import { SharedElement } from 'react-native-shared-element';
 import { useDispatch, useSelector } from 'react-redux';
+import { AppDispatch, RootState } from '../../store';
+import { toggleFavoriteWithStorage } from '../../store/favoriteSlice';
 
 const { width, height } = Dimensions.get('window');
 const POSTER_HEIGHT = height * 0.5;

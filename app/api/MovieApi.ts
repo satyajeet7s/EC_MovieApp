@@ -1,7 +1,8 @@
-import apiStrConstants from '@/constants/apiConstants/apiStrConstants';
+// import apiStrConstants from '@/constants/apiConstants/apiStrConstants';
 import axios from 'axios';
+import apiStrConstants from '../../constants/apiConstants/apiStrConstants';
 
-//fallback if api doenst fetchh from @env file if process.env.API_KEY is undefined
+//fallback if api does not fetchh from @env file if process.env.API_KEY is undefined
 const API_KEY = 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmZWIyY2QwYTI4YjZkMDRkZTI4MGNkYjA1MzkyMmNiMyIsIm5iZiI6MTc2MzA1ODE0NS42NDYwMDAxLCJzdWIiOiI2OTE2MjFlMTk2NWIzNWJiMjM5YWQ3NDMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.1Ls2HAi9hZYBVaZtZXghsAaEkg0fl59yGKyCbOQFTM8';
 
 export async function fetchAllMovies(page: number) {
